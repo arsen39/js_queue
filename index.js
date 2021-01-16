@@ -22,7 +22,7 @@ class Queue{
 
   dequeue () {
     const deleteElement = this[this._size - 1];
-    delete this[this._size-- - 1];
+    delete this[--this._size];
     return deleteElement;
   }
 
